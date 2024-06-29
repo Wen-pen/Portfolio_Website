@@ -1,0 +1,58 @@
+<script>
+    import Button from "../components/button.svelte"
+    import { gsap } from "gsap/dist/gsap"
+    import { onMount } from 'svelte'
+    import { TextPlugin } from "gsap/dist/TextPlugin"
+
+    let main
+    gsap.registerPlugin(TextPlugin);
+    onMount(() =>{
+        if (main){
+            gsap.from("#main" ,{
+            duration: 5, 
+            opacity: 0,
+        })
+        }
+        })
+</script>
+ 
+<main bind:this={main} class="min-h-screen bg-gradient-to-t from-[#DEE4EA] to-[#7D8184] text-white bg-blend-multiply font-poppins">
+    <div class="flex items-center justify-center h-32">
+        <div class="m-6 w-32 bg-grey-400"></div>
+    </div>
+        
+    <h1 class="text-6xl text-center" id="main" on:outrostart={ () => {
+        gsap.to("#main" ,{
+            duration: 0.1, 
+            opacity: 0,})
+        }}>
+        🧑🏾‍💻
+    </h1>
+    
+    <h1 class="text-white text-center font-extrabold m-3 text-4xl" id="main" on:outrostart={ () => {
+        gsap.to("#main" ,{
+            duration: 0.1, 
+            opacity: 0,})
+        }}>
+        Mwenya Chibwe
+    </h1>
+
+        <div class="flex flex-col items-center" id="main" on:outrostart={
+             () => {
+            gsap.to("#main" ,{
+                duration: 0.1, 
+                opacity: 0,})
+            }
+        }>
+            <div class="w-96">
+                <p class="text-white m-3 text-center shrink font-normal">
+                    A 19 year old incoming computer science student at Nottingham Trent University. Experienced in Python, JS, C# and Dart. 
+                    While my current hobbies are debating, video gaming and weightlifting, programming is my first love 🤍
+                </p>
+            </div>
+            <Button tag="Github Link" link="https://github.com/Wen-pen"/>
+            <Button tag="My Projects" link="/projects"/>
+            <Button tag="Contact Me" link="/contacts"/>
+        </div>
+</main>
+
