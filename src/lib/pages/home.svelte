@@ -3,6 +3,7 @@
     import { gsap } from "gsap/dist/gsap"
     import { onMount } from 'svelte'
     import { TextPlugin } from "gsap/dist/TextPlugin"
+  import { Link } from "svelte-routing";
 
     let main
     gsap.registerPlugin(TextPlugin);
@@ -50,9 +51,18 @@
                     While my current hobbies are debating, video gaming and weightlifting, programming is my first love 🤍
                 </p>
             </div>
-            <Button tag="Github Link" link="https://github.com/Wen-pen"/>
-            <Button tag="My Projects" link="/projects"/>
-            <Button tag="Contact Me" link="/contacts"/>
+                <Button tag={"Github Link"} link={"https://github.com/Wen-pen"}/>
+                <Link to="/projects">
+                <button class="bg-gradient-to-r from-[#DEE4EA] to-[#F9FCFF] rounded-lg shadow-lg p-3 font-semibold text-gray-400 mx-3 my-3">
+                    My Projects
+                </button>
+                </Link>
+                <Link to="/contacts">
+                    <button class="bg-gradient-to-r from-[#DEE4EA] to-[#F9FCFF] rounded-lg shadow-lg p-3 font-semibold text-gray-400 mx-3 my-3">
+                        Contact Me
+                    </button>
+                 </Link>
+        
         </div>
 </main>
 
