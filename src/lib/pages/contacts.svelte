@@ -6,15 +6,6 @@
     import Button from "../components/button.svelte";
 
     let main
-    gsap.registerPlugin(TextPlugin);
-    onMount(() =>{
-        if (main){
-            gsap.from("#main" ,{
-            duration: 5, 
-            opacity: 0,
-        })
-        }
-        })
 </script>
 
 <main bind:this={main} class="min-h-screen bg-gradient-to-t from-[#DEE4EA] to-[#7D8184] text-white bg-blend-multiply font-poppins" >

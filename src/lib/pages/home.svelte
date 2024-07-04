@@ -22,32 +22,23 @@
         <div class="m-6 w-32 bg-grey-400"></div>
     </div>
         
-    <h1 class="text-6xl text-center" id="main" on:outrostart={ () => {
-        gsap.to("#main" ,{
-            duration: 0.1, 
-            opacity: 0,})
-        }}>
+    <h1 class="text-6xl text-center" id="main" >
+       
         🧑🏾‍💻
     </h1>
     
-    <h1 class="text-white text-center font-extrabold m-3 text-4xl" id="main" on:outrostart={ () => {
-        gsap.to("#main" ,{
-            duration: 0.1, 
-            opacity: 0,})
-        }}>
+    <h1 class="text-white text-center font-extrabold m-3 text-4xl" id="main">
+        
         Mwenya Chibwe
     </h1>
 
-        <div class="flex flex-col items-center" id="main" on:outrostart={
-             () => {
-            gsap.to("#main" ,{
-                duration: 0.1, 
-                opacity: 0,})
-            }
-        }>
+        <div class="flex flex-col items-center" id="main">
             <div class="w-96">
                 <p class="text-white m-3 text-center shrink font-normal">
                     A 19 year old incoming computer science student at Nottingham Trent University. Experienced in Python, JS, C# and Dart. 
+                    
+                </p>
+                <p class="text-white m-3 text-center shrink font-normal">
                     While my current hobbies are debating, video gaming and weightlifting, programming is my first love 🤍
                 </p>
             </div>
