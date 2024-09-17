@@ -35,8 +35,7 @@
         <div class="flex flex-col items-center" id="main">
             <div class="w-96">
                 <p class="text-white m-3 text-center shrink font-normal">
-                    A 19 year old incoming computer science student at Nottingham Trent University. Experienced in Python, JS, C# and Dart. 
-                    
+                    A 19 year old first year computer science student at Nottingham Trent University. Experienced in Python, JS, C# and Dart. 
                 </p>
                 <p class="text-white m-3 text-center shrink font-normal">
                     While my current hobbies are debating, video gaming and weightlifting, programming is my first love 🤍
