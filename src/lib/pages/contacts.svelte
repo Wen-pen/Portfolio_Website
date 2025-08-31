@@ -16,16 +16,12 @@
         Contact Me
     </h1>
     <div class="flex flex-col items-center" id="main">
-        <a href="https://www.instagram.com/damnmlc/">
+        <a href="https://www.linkedin.com/in/mwenya-chibwe-761097335/">
             <button type="button" class="bg-gradient-to-r from-[#DEE4EA] to-[#F9FCFF] rounded-full shadow-lg p-5 font-semibold text-gray-400 mx-3 my-3">
-                    Instagram Link
+                    Linkedin Link
             </button>
         </a>
-        <a href="https://x.com/mwenyamail877">
-            <button type="button" class="bg-gradient-to-r from-[#DEE4EA] to-[#F9FCFF] rounded-full shadow-lg p-5 font-semibold text-gray-400 mx-3 my-3">
-                X/Twitter Link
-            </button>
-        </a>
+    
         <a href="mailto:mwenyamail877@gmail.com">
             <button type="button" class="bg-gradient-to-r from-[#DEE4EA] to-[#F9FCFF] rounded-full shadow-lg p-5 font-semibold text-gray-400 mx-3 my-3">
                 Email Link
