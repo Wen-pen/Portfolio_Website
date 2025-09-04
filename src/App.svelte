@@ -1,3 +1,9 @@
+<style>
+    :global(body){
+       @apply bg-gradient-to-t from-[#DEE4EA] to-[#7D8184];
+    }
+</style>
+
 <script>
   import { Router, Route } from "svelte-routing";
   import Home from "./lib/pages/home.svelte"
